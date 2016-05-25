@@ -1,0 +1,10 @@
+<%- include header %>
+<% for(var i=0;i<posts.length;i++){  %>
+<div class="i">
+    <h3><%= posts[i].title %></h3>
+    <div class="content">
+    <%- posts[i].post %>
+    </div>
+</div>
+<% } %>
+<%- include footer  %>
