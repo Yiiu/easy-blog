@@ -49,7 +49,7 @@ module.exports = function(app){
     });
     // 注册页面
     app.get('/reg', checkNotLogin);
-    app.get("/reg", function(req, res, next){
+    app.get("#/reg", function(req, res, next){
         res.render("reg", { 
             user: req.session.user,
             title : "注册",
