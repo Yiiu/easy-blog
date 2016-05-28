@@ -1,29 +1,18 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>blog</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-  <div class="container">
-    <nav class="nav">
-      <div class="container">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-          </ul>
-          <ul class="nav navbar-right">
-          <% if(user){ %>
-            <li><a href="/post">发表</a></li>
-            <li><a href="/logout">登出</a></li>
-          <% }else{ %>
-            <li><a href="/login">登录</a></li>
-            <li><a href="/reg">注册</a></li>
-            <% } %>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></div>
-    </nav>
-    <article>
-      <h2 class="text-center title"><%= title %></h2>
-      <h2 class="text-center"><%= success %></h2>
-      <h2 class="text-center"><%= error %></h2>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+<div class="container">
+    <aside>
+        <div class="bg"></div>
+        <div class="bgs"></div>
+        <div class="content">
+            <div class="avatar"></div>
+            <h1><%= title %></h1>
+        </div>
+    </aside>
+    <div class="main">
